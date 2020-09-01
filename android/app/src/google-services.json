@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "854979490101",
+    "firebase_url": "https://logintask-3e7ca.firebaseio.com",
+    "project_id": "logintask-3e7ca",
+    "storage_bucket": "logintask-3e7ca.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:854979490101:android:3c8e49ebcf01e1c8009c7c",
+        "android_client_info": {
+          "package_name": "com.example.taskhanloapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "854979490101-kuo2pbp3otjt08ms71kto6i04tiivb2a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.taskhanloapp",
+            "certificate_hash": "37feb707b9723fdb16117a55eac1bb2ec276ff50"
+          }
+        },
+        {
+          "client_id": "854979490101-le3f6bj9gu6t3ofled3cuf4gkg5qrjd4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATHA3eADI-xP5XFW9n30iTK13rvFjxAfM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "854979490101-le3f6bj9gu6t3ofled3cuf4gkg5qrjd4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
