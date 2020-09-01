@@ -48,14 +48,14 @@ class MyAppState extends State<MyApp> with SingleTickerProviderStateMixin {
     super.initState();
 
     _animationController =
-        new AnimationController(vsync: this, duration: Duration(seconds: 2));
+        new AnimationController(vsync: this, duration: Duration(seconds: 3));
     _animation =
         new CurvedAnimation(parent: _animationController, curve: Curves.linear);
     _animation.addListener(() => this.setState(() {}));
     _animationController.forward();
 
     Future.delayed(
-      Duration(seconds: 3),
+      Duration(seconds: 4),
       () {
         Navigator.of(context).pushNamed(OnBoardScreen.routename);
       },

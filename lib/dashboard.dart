@@ -1,6 +1,7 @@
 import 'package:firebase_database/firebase_database.dart';
 import 'package:firebase_database/ui/firebase_animated_list.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
 import 'add_data_screen.dart';
@@ -82,37 +83,15 @@ class DB_State extends State<Dashboard> {
       ),);
   }
 
-//  ListView notesBody() {}
-
-  Future<bool> _onBackPressed() {
-    return showDialog(context: context, builder: (context) => AlertDialog(
-      title: Text('Do You want to exit the App?'),
-      actions: <Widget>[
-        FlatButton(
-          child: Text('No'),
-          onPressed: (){
-
-          },
-        ),
-    FlatButton(
-      child: Text('No'),
-      onPressed: (){
-
-      })
-      ],
-    ));
-  }
 
   DateTime currentBackPressTime;
-
-
-
   Future<bool> onwillpop() {
     DateTime now = DateTime.now();
     if (currentBackPressTime == null ||
         now.difference(currentBackPressTime) > Duration(seconds: 2)) {
       currentBackPressTime = now;
       Fluttertoast.showToast(msg: 'Do You Want to exit?');
+      SystemNavigator.pop();
       return Future.value(false);
     }
     return Future.value(true);
